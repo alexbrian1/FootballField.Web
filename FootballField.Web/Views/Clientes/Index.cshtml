@@ -1,0 +1,31 @@
+@model List<Cliente>
+    
+<h1>Lista de Clientes</h1>
+
+
+<div class="container">
+    <a asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a>
+
+    @* <button asp-action="Create" asp-controller="Clientes">Agregar Cliente</button> *@
+    
+    <table class="table">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Celular</th>
+        </tr>
+        @foreach (var item in @Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Nombre</td>
+                <td>@item.Apellido</td>
+                <td>@item.numeroCelular</td>
+                <td><a asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></td>
+            </tr>
+        }
+    </table>
+  
+   
+</div>

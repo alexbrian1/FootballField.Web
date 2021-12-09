@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ec799a5d-bae8-4b2e-a4ec-a9de7de9af09": {
+      "ProjectGuid": "ec799a5d-bae8-4b2e-a4ec-a9de7de9af09",
+      "DisplayName": "FootballField.Web",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
