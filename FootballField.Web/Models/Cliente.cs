@@ -1,12 +1,15 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace FootballField.Web.Models
 {
-    public class Cliente
+    public class Cliente : EntityBase
     {
-        public Guid ID { get; set; }
+        [Required]
         public string Nombre { get; set; }
+        [Required]
         public string Apellido { get; set; }
+        [Required]
         public string numeroCelular { get; set; }
 
     }

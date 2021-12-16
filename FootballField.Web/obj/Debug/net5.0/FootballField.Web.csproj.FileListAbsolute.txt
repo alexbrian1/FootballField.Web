@@ -86,3 +86,10 @@ C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\obj
 C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\obj\Debug\net5.0\Razor\Views\Clientes\Create.cshtml.g.cs
 C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\obj\Debug\net5.0\Razor\Views\Clientes\Editar.cshtml.g.cs
 C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\obj\Debug\net5.0\Razor\Views\Clientes\Index.cshtml.g.cs
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\alexb\OneDrive\Escritorio\ComIt\FootballField.Web\FootballField.Web\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

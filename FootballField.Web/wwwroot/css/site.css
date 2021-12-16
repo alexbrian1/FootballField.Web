@@ -11,17 +11,32 @@ a.navbar-brand {
 a {
   color: #0366d6;
 }
-
-.btn-primary {
+.table tr .icon{
+  text-align: center;
+}
+.far{
+  font-size:  20px;
+}
+.b{
+  width: 90px;
+}
+.link{
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  text-decoration-style: none;
+}
+.marginBotTop25px{
+  margin: 25px 0 25px 0;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.btnCliente{
+  text-decoration: none;
+  background-color: aquamarine;
 }
 
 /* Sticky footer styles
@@ -69,3 +84,7 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+/* Estilos Pagina Principal
+-------------------------------------------------- */
+
+

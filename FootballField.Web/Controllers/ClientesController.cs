@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using FootballField.Web.Data;
 using FootballField.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,9 +8,14 @@ namespace FootballField.Web.Controllers
 {
     public class ClientesController : Controller
     {
+        private ApplicationDbContext _context;
+        public ClientesController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
-            return View(FootballField.Web.Program.ClientesList);
+            return View(_context.Clientes.ToList());
         }
 
         public IActionResult Create()
@@ -19,12 +26,12 @@ namespace FootballField.Web.Controllers
         public IActionResult Guardar(string nombre, string apellido, string numero)
         {
             Cliente nuevoCliente = new Cliente();
-            nuevoCliente.ID = Guid.NewGuid();
             nuevoCliente.Nombre = nombre;
             nuevoCliente.Apellido = apellido;
             nuevoCliente.numeroCelular = numero;
 
-            FootballField.Web.Program.ClientesList.Add(nuevoCliente);
+            _context.Clientes.Add(nuevoCliente);
+            _context.SaveChanges();
 
             return RedirectToAction("Index");
             
@@ -32,7 +39,7 @@ namespace FootballField.Web.Controllers
 
        
 
-        public IActionResult Editar(Guid id)
+        public IActionResult Editar(int id)
         {
             Cliente editar = Buscar(id);
             if (editar == null)
@@ -41,8 +48,20 @@ namespace FootballField.Web.Controllers
             }
             return View(editar);
         }
+        public IActionResult Eliminar(int id)
+        {
+            Cliente eliminar = Buscar(id);
+            if (eliminar == null)
+            {
+                return StatusCode(404);;
+            }
 
-        public IActionResult Actualizar(Guid id, string nombre, string apellido, string numero)
+            _context.Clientes.Remove(eliminar);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Actualizar(int id, string nombre, string apellido, string numero)
         {
             Cliente editar = Buscar(id);
             if (editar != null)
@@ -51,12 +70,16 @@ namespace FootballField.Web.Controllers
                 editar.Nombre = nombre;
                 editar.Apellido = apellido;
                 editar.numeroCelular = numero;
+                _context.Clientes.Update(editar);
+                _context.SaveChanges();
             }
             return RedirectToAction("Index");
         }
-         private Cliente Buscar(Guid id)
+
+      
+         private Cliente Buscar(int id)
         {
-            Cliente find  = FootballField.Web.Program.ClientesList.Find(elemento => elemento.ID == id);
+            Cliente find  = _context.Clientes.Find(id);
             return find;
         }
     }

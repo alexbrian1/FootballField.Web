@@ -1,10 +1,12 @@
 @model List<Cliente>
+    @* <link rel="stylesheet" href="~/css/site.css" /> *@
     
-<h1>Lista de Clientes</h1>
+<h1>Listado de Clientes</h1>
 
 
 <div class="container">
-    <a asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a>
+    @* <a asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a> *@
+    <button type="button" class="btn btn-primary marginBotTop25px"><a class="link" asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a></button>
 
     @* <button asp-action="Create" asp-controller="Clientes">Agregar Cliente</button> *@
     
@@ -14,6 +16,8 @@
             <th scope="col">Nombre</th>
             <th scope="col">Apellido</th>
             <th scope="col">Celular</th>
+            <th class="icon"><i class="far fa-edit"></i></th>
+            <th class="icon"><i class="far fa-trash-alt"></i></th>
         </tr>
         @foreach (var item in @Model)
         {
@@ -22,7 +26,12 @@
                 <td>@item.Nombre</td>
                 <td>@item.Apellido</td>
                 <td>@item.numeroCelular</td>
-                <td><a asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></td>
+                @* <td><a asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></td> *@
+                @* <td><a asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></td> *@
+                <td class="icon"><button type="button" class="b btn btn-success"><a class="link" asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></button></td>
+                <td class="icon"><button type="button" class="b btn btn-danger"><a class="link" asp-action="Eliminar" asp-controller="Clientes" asp-route-id="@item.ID">Eliminar</a></button></td>
+                
+                
             </tr>
         }
     </table>

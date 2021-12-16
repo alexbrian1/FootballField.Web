@@ -12,7 +12,7 @@ namespace FootballField.Web
 {
     public class Program
     {
-        public static List<Cliente> ClientesList  =new List<Cliente>();
+        // public static List<Cliente> ClientesList  =new List<Cliente>();
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
