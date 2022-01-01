@@ -15,5 +15,6 @@ namespace FootballField.Web.Data
         }
 
         public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cancha> Canchas { get; set; }
     }
 }

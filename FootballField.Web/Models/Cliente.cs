@@ -9,8 +9,7 @@ namespace FootballField.Web.Models
         public string Nombre { get; set; }
         [Required]
         public string Apellido { get; set; }
-        [Required]
-        public string numeroCelular { get; set; }
+        
 
     }
 }

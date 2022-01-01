@@ -87,4 +87,21 @@ body {
 /* Estilos Pagina Principal
 -------------------------------------------------- */
 
+.btn-green{
+  background-color: #28B463;
+  text-decoration: none;
+}
 
+.submit{
+  background-color: #28B463;
+  border: 1px transparent;
+  width: 130px;
+  border-radius: 5px;
+  height: 35px;
+  color: #fff;
+
+}
+.header_color{
+  background-color: #28B463;
+
+}

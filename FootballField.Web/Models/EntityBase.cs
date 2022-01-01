@@ -5,8 +5,10 @@ namespace FootballField.Web.Models
 {
     public class EntityBase
     {
-         [Key]
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
+
+        public string numeroCelular { get; set; }
     }
 }

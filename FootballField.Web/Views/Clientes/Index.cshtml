@@ -6,7 +6,7 @@
 
 <div class="container">
     @* <a asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a> *@
-    <button type="button" class="btn btn-primary marginBotTop25px"><a class="link" asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a></button>
+    <button type="button" class="btn btn-green marginBotTop25px"><a class="link" asp-action="Create" asp-controller="Clientes">Agregar Nuevo Cliente</a></button>
 
     @* <button asp-action="Create" asp-controller="Clientes">Agregar Cliente</button> *@
     
@@ -28,7 +28,7 @@
                 <td>@item.numeroCelular</td>
                 @* <td><a asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></td> *@
                 @* <td><a asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></td> *@
-                <td class="icon"><button type="button" class="b btn btn-success"><a class="link" asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></button></td>
+                <td class="icon"><button type="button" class="b btn btn-warning"><a class="link" asp-action="Editar" asp-controller="Clientes" asp-route-id="@item.ID">Editar</a></button></td>
                 <td class="icon"><button type="button" class="b btn btn-danger"><a class="link" asp-action="Eliminar" asp-controller="Clientes" asp-route-id="@item.ID">Eliminar</a></button></td>
                 
                 

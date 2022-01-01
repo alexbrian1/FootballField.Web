@@ -15619,6 +15619,11 @@
   "RootNamespace": "FootballField.Web",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Canchas\\index.cshtml",
+      "TargetPath": "Views\\Canchas\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15636,6 +15641,11 @@
     {
       "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Clientes\\Index.cshtml",
       "TargetPath": "Views\\Clientes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Canchas\\Create.cshtml",
+      "TargetPath": "Views\\Canchas\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15659,8 +15669,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Canchas\\Editar.cshtml",
+      "TargetPath": "Views\\Canchas\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Clientes\\Editar.cshtml",
       "TargetPath": "Views\\Clientes\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\alexb\\OneDrive\\Escritorio\\ComIt\\FootballField.Web\\FootballField.Web\\Views\\Canchas\\Pago.cshtml",
+      "TargetPath": "Views\\Canchas\\Pago.cshtml",
       "FileKind": "mvc"
     },
     {
